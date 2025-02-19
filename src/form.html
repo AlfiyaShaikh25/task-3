@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+
+  <style>
+    @media only screen and (max-width: 600px) {
+
+    }
+  </style>
+
+
+
+
+
+  <link rel="stylesheet" href="form.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+  <div class="body-div">
+    <div id="div_flex">
+      <div class="sidebar" style=" flex-wrap: wrap;">
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h3 class="sidebar-text">
+          Talent
+        </h3>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Dashboard
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Team members
+
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <il class="d-flex">
+                    <img src="team.png" alt="icon " width="20px" height="20px">
+                    team members
+                  </il>
+                  <il>
+                    <img src="a.png" alt="icon " width="20px" height="20px">
+                    Certification
+                  </il>
+                </ul>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Projects
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="nav-bar" style="width: 100%;">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-light">
+          <div class="container-div container-fluid">
+            <div class="d-flex flex-column">
+
+              <a class="navbar-brand" href="#">Add Team Members</a>
+
+
+              <a href="#" class="navbar-link">Team Members > team mamber > add team member</a>
+            </div>
+
+          </div>
+
+
+        </nav>
+
+        <div class="form-div container-fluid " style="width: 100%;">
+          <div class="container-lg  border 1px solid dark d-flex">
+            <h3 class="form-h3">Add Members to Organization</h3>
+        
+              <form class=" d-flex " style="margin-left: auto ;padding: 10px;;">
+                <button class="btn btn-outline-danger me-4 " type="submit">Cancel</button>
+                <button class="btn btn-primary " type="submit">Save</button>
+
+              </form>
+           
+          </div>
+
+          <div class="form-img container-fluid  border 1px solid dark">
+            <div id="img-div">
+              <img src="icone.jpg" class="rounded-circle" alt="Cinque Terre" height="150px" width="150px">
+              <button class="add-icon"
+                style="position: absolute; bottom: 0; right: 40px; background-color: #ffffff; border-radius: 40%; border: none; padding: 0px; font-size: 24px; width: 40px; height: 40px; text-align: center;">
+                +
+              </button>
+            </div>
+            <div>
+              <form class="form1 row g-3 ">
+                <div class="col-md-6">
+                  <label for="inputName4" class="form-label">Name<span class="span-star">*</span></label>
+                  <input type="text" class="form-control" id="inputName4">
+                </div>
+
+                <div class="col-div col-md-6  ">
+                  <label for="inputlastname" class="form-label">Last Name<span class="span-star">*</span></label>
+                  <input type="text" class="form-control" id="inputlast">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputemail4" class="form-label">Email<span class="span-star">*</span></label>
+                  <input type="email" class="form-control" id="inputemail4">
+                </div>
+
+
+
+              </form>
+            </div>
+
+
+          </div>
+          <div>
+            <form class="form1 row g-3 ">
+              <div class="col-md-6">
+                <label for="inputName4" class="form-label">Name<span class="span-star">*</span></label>
+                <input type="text" class="form-control" id="inputName4">
+              </div>
+
+              <div class="col-div col-md-6  ">
+                <label for="inputlastname" class="form-label">Last Name<span class="span-star">*</span></label>
+                <input type="text" class="form-control" id="inputlast">
+              </div>
+              <div class="col-md-12">
+                <label for="inputemail4" class="form-label">Email<span class="span-star">*</span></label>
+                <input type="email" class="form-control" id="inputemail4">
+              </div>
+
+
+
+            </form>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+<script src="demo.js">
+
+</script>
+
+</html>
